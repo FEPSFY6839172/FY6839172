@@ -45,89 +45,85 @@
     <h3 id="abstract">abstract</h3>
     <p class="ex">
     <pre>
-Origami has always interested me: how complex 3d structures can be created by simple folds. 
-I think space structures are some of the most complex structures our society creates, 
-so I set out to research if Origami is being used in space development. I first had to understand
-what challenges might stop origami from being used. I found that it is difficult to model origami
-folds currently so there is limited use although there is a lot of interest in using origami for 
-solar sails. Nasa is doing further research on modelling origami but did use some simple folding 
-techniques on the James web telescope and Japan has had success using origami folds in their solar 
-sails, and we will look at these in greater depth.
+Origami has always interested me: how complex 3d structures can be created by simple folds. I think space structures are some of the 
+most complex structures our society creates, so I set out to research if Origami is being used in space development. I first had to 
+understand what challenges might stop origami from being used. I found that it is difficult to model origami folds currently so there
+is limited use although there is a lot of interest in using origami for solar sails. Nasa is doing further research on modelling origami
+but did use some simple folding techniques on the James web telescope and Japan has had success using origami folds in their solar sails,
+and we will look at these in greater depth.
     </pre>
     <h3 id="introduction">introduction</h3>  
     <pre>
-Origami is the Japanese art of folding paper; it is primarily used to create decorative pieces. 
-Many people have seen, and some made, an origami crane. In approximately 20 folds you can turn a flat piece
-of paper into a complex crane. If you have attempted to make a crane, then you may have noticed that despite 
-having strict instructions there is a degree of flexibility to each fold: no folds need to be perfect to obtain 
-a recognisable crane. Paper and human creation allows for some error in each fold however if you where to use
-origami in space there needs to be no errors. To make sure that is possible we need to model the folds.
+Origami is the Japanese art of folding paper; it is primarily used to create decorative pieces. Many people have seen, and some made, 
+an origami crane. In approximately 20 folds you can turn a flat piece of paper into a complex crane. If you have attempted to make a crane,
+then you may have noticed that despite having strict instructions there is a degree of flexibility to each fold: no folds need to be 
+perfect to obtain a recognisable crane. Paper and human creation allows for some error in each fold however if you where to use origami in
+space there needs to be no errors. To make sure that is possible we need to model the folds.
 </pre>
     <h3 id="modelling">modelling</h3>  
     <pre>
-“An important concept in applying origami to engineering, is the notion of ‘rigid’ origami. This assumes that
-the material does not bend or stretch between the fold lines and can be modelled effectively as rigid panels 
-connected by frictionless hinges. A more relaxed definition is ‘isometric’ Origami,
-where the material can bend but not stretch” (Schenk,2014)
+“An important concept in applying origami to engineering, is the notion of ‘rigid’ origami. This assumes that the material does not 
+bend or stretch between the fold lines and can be modelled effectively as rigid panels connected by frictionless hinges. A more relaxed
+definition is ‘isometric’ Origami, where the material can bend but not stretch” (Schenk,2014)
 
-one model that has had reasonable success was one mainly based on rigid origami although they also 
-added systems to measure internal stress due to flexibility. (Zheng,2023)
+one model that has had reasonable success was one mainly based on rigid origami although they also added systems to measure internal stress
+		due to flexibility. (Zheng,2023)
         
-To model two panels as seen in figure 1 (a) first they split each panel into 4 hexagonal elements,
-each made up of 8 particles. To prevent the panels passing through each other using surface-to-surface contact, elements
-were set up between particles in hexagonal elements as seen by the light blue shade in figure 1 (b). The dark blue is 
-where the surface-to-surface contact elements would be tested when the model was run. How the panels move is controlled
-by the particles moving, and how the particles are connected. The particles have three translational degrees of freedom
-(DOFs)i.e., they can move in an x, y and z plane. At the hinge between panels the particles are connected so can be coupled
-and therefore the panels are now modelled as being connected. In a truly ridged system only bar-to-bar elements would be
-required to connect particles but by establishing a bar-to-bar spring element the model can now obtain data about strain
-and energy of real panels during deployment.  (Chen,2015)
+To model two panels as seen in figure 1 (a) first they split each panel into 4 hexagonal elements, each made up of 8 particles. To prevent
+the panels passing through each other using surface-to-surface contact, elements were set up between particles in hexagonal elements as
+seen by the light blue shade in figure 1 (b). The dark blue is where the surface-to-surface contact elements would be tested when the model
+was run. How the panels move is controlled by the particles moving, and how the particles are connected. The particles have three 
+translational degrees of freedom (DOFs)i.e., they can move in an x, y and z plane. At the hinge between panels the particles are connected
+so can be coupled and therefore the panels are now modelled as being connected. In a truly ridged system only bar-to-bar elements would be
+required to connect particles but by establishing a bar-to-bar spring element the model can now obtain data about strain and energy of real
+panels during deployment.  (Chen,2015)
 
-A paper to study this showed the deployment predicted from this model had small motion differences from the modelled movement
-as seen in figure 2. however, they estimated this deviation might be due to the aerodynamic drag and the non-constant spring 
-stiffness. (Jingyi,2022) This shows we are getting much closer to modelling origami and the more accurate the model the more we 
-can apply these uses in space
+A paper to study this showed the deployment predicted from this model had small motion differences from the modelled movement as seen in
+figure 2. however, they estimated this deviation might be due to the aerodynamic drag and the non-constant spring stiffness. (Jingyi,2022)
+this shows we are getting much closer to modelling origami and the more accurate the model the more we can apply these uses in space.
 
 
 
     </pre>
     <h3 id="Ways origami has already been used in space">Ways origami has already been used in space</h3>  
     <pre>
-The James Webb telescope successfully used simple origami techniques to fold a large lens so it would fit in a rocket. 
-Although the fold may seem relatively simple in terms of Origami “This was the first time a NASA-led mission had ever 
-attempted to complete a complex sequence to unfold an observatory in space “– a remarkable feat for our team, NASA, and
-the world.” Gregory L. Robinson, Webb program director at NASA Headquarters. (Nasa,2022)
+The James Webb telescope successfully used simple origami techniques to fold a large lens so it would fit in a rocket. Although the
+fold may seem relatively simple in terms of Origami “This was the first time a NASA-led mission had ever attempted to complete a complex
+sequence to unfold an observatory in space “– a remarkable feat for our team, NASA, and the world.” Gregory L. Robinson, Webb program
+director at NASA Headquarters. (Nasa,2022)
 
 
-One area that is seeing a lot of development is the idea of using Origami for solar sails. True solar sailing is where a
-vessel could be powered by the pressure from photons. however most solar sails also use the large sail as a solar panel as
-well to generate power. [6] Unlike the James Webb telescope a solar sail can be flexible but it still needs to deploy in a
-consistent way. A multiple step folding pattern may be easier to fold on earth by human but in space a multistep process is
-much harder to perform. This is where the usefulness of origami comes in, there are many patterns designed to unfold a panel
-in one motion. (Wonder Dome, no date)
+One area that is seeing a lot of development is the idea of using Origami for solar sails. True solar sailing is where a vessel could
+be powered by the pressure from photons. however most solar sails also use the large sail as a solar panel as well to generate power.
+[6] Unlike the James Webb telescope a solar sail can be flexible but it still needs to deploy in a consistent way. A multiple step
+folding pattern may be easier to fold on earth by human but in space a multistep process is much harder to perform. This is where the
+usefulness of origami comes in, there are many patterns designed to unfold a panel in one motion. (Wonder Dome, no date)
 
-“One of the best examples of this … is the Miura-ori or Miura fold, devised in 1970 by Dr. Miura Koryo. The Miura fold is a 
-folding technique that allows even a large sheet of paper to be quickly opened out and stowed again by simply pushing and
-pulling on its diagonals.” See figure 3. (Sasaki ,2021)
+“One of the best examples of this … is the Miura-ori or Miura fold, devised in 1970 by Dr. Miura Koryo. The Miura fold is a folding
+technique that allows even a large sheet of paper to be quickly opened out and stowed again by simply pushing and pulling on its 
+diagonals.” See figure 3. (Sasaki ,2021)
 
-NASA had an unsuccessful attempt at demonstrating the use of solar sails (Nasa,2023) however Japan’s Aerospace Exploration 
-Agency (JAXA) launched IKAROS on 20 May 2010. (Jaxa, no date) [9] It was successful in proving the viability of navigation
-using a combination of solar sails and solar power. The sail of the IKAROS is approximately 20 meters in diagonal length and is
-as thin as 0.0075 mm. It deployed in two stages:  the first stage was controlled by an inboard deployment mechanism; the second
-stage was the spinning of IKAROS to dynamically deploy the sail. (Jaxa, no date) [10] see figure 4. The dynamic movement was
-inspired by Origami folds and by continuing to have IKAROS rotate in space that would provide a constant force so the sail wouldn’t
-collapse or require a support boom.
+NASA had an unsuccessful attempt at demonstrating the use of solar sails (Nasa,2023) however Japan’s Aerospace Exploration Agency
+(JAXA) launched IKAROS on 20 May 2010. (Jaxa, no date) [9] It was successful in proving the viability of navigationusing a
+combination of solar sails and solar power. The sail of the IKAROS is approximately 20 meters in diagonal length and is as thin as
+0.0075 mm. It deployed in two stages:  the first stage was controlled by an inboard deployment mechanism; the secondbstage was the
+spinning of IKAROS to dynamically deploy the sail. (Jaxa, no date) [10] see figure 4. The dynamic movement was inspired by Origami
+folds and by continuing to have IKAROS rotate in space that would provide a constant force so the sail wouldn’t collapse or require a
+support boom.
 
 </pre>
     <h3 id="Conclusion">Conclusion</h3>  
     <pre>
 As many places are researching how to model origami folds (NASA has said they are working on it (Fulton,2023)) and there has already
 been some success such as IKAROS, I believe Origami has already proven its usefulness for space development. I wonder whether specific
-folds will inspire more structures such as the Miura fold inspiring IKAROS or if there will be a broader use of Origami to the point where
-it will no longer be credited to Origami it will just be the way of folding for space use.
+folds will inspire more structures such as the Miura fold inspiring IKAROS or if there will be a broader use of Origami to the point 
+where it will no longer be credited to Origami it will just be the way of folding for space use.
     </pre>
     <h3 id="refrences">ref</h3>  
-    <a href="https://en.wikipedia.org/wiki/Origami"> <pre>a. Origami </pre></a>
+<pre>
+	a. Origami 
+</pre>
+	    <a href="https://en.wikipedia.org/wiki/Origami">link</a>
     
      <pre>
         b.
@@ -159,5 +155,6 @@ it will no longer be credited to Origami it will just be the way of folding for 
             <td> <a href="#refrences">ref to refrences </td>
         </tr>
     </table>
+    <hr>
     <!continue from 21>
 </html>
