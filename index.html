@@ -245,18 +245,18 @@ function showSlide() {
 	    document.getElementById('slide').src = slideImages[currentSlide];
 	    }
 
-function nextSlide(){
+function nextSlide() {
 	    currentSlide = ( currentSlide + 1) % slideImages.length;
 	    showSlide();
 	    }
 
 
-function prevSlide(){
+function prevSlide() {
 	    currentSlide = ( currentSlide - 1 + slideImages.length) % slideImages.length;
 	    showSlide();
 	    }
 	    
-function showSlideNumber(slideNumber){
+function showSlideNumber(slideNumber) {
 	    currentSlide = slideNumber - 1
 	showSlide();
 	}
@@ -264,25 +264,25 @@ function showSlideNumber(slideNumber){
 showSlide () ;
 </script>
 <div id="slide -container">
-	<img id="slide" src="slidel.jpg" alt="slide 1" style="width:100%; max-width:800px">
+<img id="slide" src="slidel.jpg" alt="slide 1" style="width:100%; max-width:800px">
 
 <div class="button-container">
-	<button class="button" onclick="prevSlide()">Previous</button> 
-	<button class="button" onclick= "nextSlide ()">Next</button> 
+	<button class="button" onclick="prevSlide()">Previous </button> 
+	<button class="button" onclick= "nextSlide ()">Next </button> 
 </div>
 <div class="slide-number- container">
-	<button class="button" onclick= "showSlideNumber (1) ">1</button>
-	<button class="button" onclick= "showSlideNumber (2) ">2</button>
-	<button class="button" onclick= "showSlideNumber (3) ">3</button>
-	<button class="button" onclick= "showSlideNumber (4) ">4</button>
-	<button class="button" onclick= "showSlideNumber (5) ">5</button>
+	<button class="button" onclick= "showSlideNumber(1)">1</button>
+	<button class="button" onclick= "showSlideNumber(2)">2</button>
+	<button class="button" onclick= "showSlideNumber(3)">3</button>
+	<button class="button" onclick= "showSlideNumber(4)">4</button>
+	<button class="button" onclick= "showSlideNumber(5)">5</button>
 </div>
-<style>
+<style>	
 #slide-container {
-text-align: center;
-position: relative;
+	text-align: center;
+	position: relative;
 	}
-.button-container{
+.button-container {
 position: absolute;
 bottom: 0;
 left: 50%;
@@ -308,4 +308,6 @@ left: 5O%;
 transform: translateX (-50%);
 margin-bottom: -50px;
 }
+</style>
+	
 </html>
