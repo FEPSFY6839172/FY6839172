@@ -237,16 +237,18 @@ Fulton, J. (2023) Dynamics Analysis of Origami-Folded Deployable Space Structure
         </tr>
     </table>
     <hr>
+	<h2><b>Conference Paper Slides: Uses of origami for space development</b></h2>
+
 <script>
 var slideImages = ["Slide1.jpg", "Slide2.jpg", "Slide3.jpg", "Slide4.jpg", "Slide5.jpg"]; 
 var currentSlide = 0;
 
 function showSlide() {
-	    document.getElementById('slide').src = slideImages[currentSlide];
+	    document.getElementById('Slide').src = slideImages[currentSlide];
 	    }
 
 function nextSlide() {
-	    currentSlide = ( currentSlide + 1) % slideImages.length;
+	    currentSlide = (currentSlide + 1) % slideImages.length;
 	    showSlide();
 	    }
 
@@ -261,14 +263,14 @@ function showSlideNumber(slideNumber) {
 	showSlide();
 	}
 
-showSlide () ;
+showSlide();
 </script>
 <div id="slide-container">
-<img id="slide" src="Slidel.jpg" alt="slide 1" style="width:100%; max-width:800px">
+<img id="Slide" src="Slidel.jpg" alt="slide 1" style="width:100%; max-width:800px">
 
 <div class="button-container">
-	<button class="button" onclick="prevSlide()">Previous </button> 
-	<button class="button" onclick= "nextSlide ()">Next </button> 
+	<button class="button" onclick="prevSlide()">Previous</button> 
+	<button class="button" onclick= "nextSlide ()">Next</button> 
 </div>
 <div class="slide-number-container">
 	<button class="button" onclick= "showSlideNumber(1)">1</button>
@@ -283,6 +285,7 @@ showSlide () ;
 	position: relative;
 	}
 .button-container {
+position: absolute;
 bottom: 0;
 left: 50%;
 transform: translateX (-50%);
@@ -297,13 +300,13 @@ border: none;
 border-radius: 5px;
 font-size: 16px;
 cursor: pointer;
-margin: 0 Spx;
+margin: 0 5px;
 }
 	
 .slide-number-container {
-
+position: absolute;
 bottom: 0;
-left: 5O%;
+left: 50%;
 transform: translateX (-50%);
 margin-bottom: -50px;
 }
